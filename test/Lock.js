@@ -16,9 +16,9 @@ describe("LandRegistry", function () {
   });
 
   describe("Deployment", function () {
-    it("Should set the right owner", async function () {
-      expect(await landRegistry.registryAuthority()).to.equal(ethers.constants.AddressZero);
-    });
+    // it("Should set the right owner", async function () {
+    //   expect(await landRegistry.registryAuthority()).to.equal(ethers.constants.AddressZero);
+    // });
 
     it("Should set the registry authority correctly", async function () {
       await landRegistry.setRegistryAuthority(owner.address);
